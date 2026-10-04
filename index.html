@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Verification System</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome Latest v7.3.1 CDN Link -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
+</head>
+<body>
+    
+    
+    <header>
+        <div class="left">
+            <div class="government_logo"><img src="logo.png" alt="logo"></div>
+            <div class="application-info">
+            <div class="application_name">Online Verification System</div>
+            <div class="subtitle">for Weighing and Measuring Instruments</div>
+            </div>
+        </div>
+        <div class="centre">
+            <div class="accurate_measure">Accurate Measurements</div>
+            <div class="fair_trade">Fair Trade</div>
+            <div class="consumer_protection">Consumer Protection</div>
+        </div>
+        <div class="right">
+            <div class="notification_navbar">
+                 <div class="notification_icon"><i class="fa-solid fa-bell"></i></div>
+            <div class="notification_count">3</div>
+        </div>
+           <div class="user">
+             <div class="user_icon"><i class="fa-solid fa-user"></i></div>
+            <div class="user-info">
+                 <div class="user_name">Adarsh</div>
+            <div class="user_role">user</div>
+            </div>
+           <div class="dropdown_indicator"> <i class="fa-solid fa-chevron-down"></i></div>
+        </div>
+           </div> 
+    </header>
+
+    <main>
+        <aside>
+            <nav>
+                <a href="" class="active"><i class="fa-solid fa-house"></i>Dashboard</a>
+                <a href=""><i class="fa-solid fa-scale-balanced"></i>My Instruments</a>
+                <a href=""><i class=" fa-solid fa-file-circle-check"></i>Verification Request</a>
+                <a href=""><i class="fa-solid fa-triangle-exclamation"></i>Complaints</a>
+                <a href=""><i class="fa-solid fa-certificate"></i>Certificates</a>
+                <a href=""><i class="fa-solid fa-bell"></i>Notifications</a>
+                <a href=""><i class="fa-solid fa-user"></i>Profile</a>
+                </nav>
+                <div class="nav_text">
+                    <h3>Verified Instruments Build Trust</h3>
+                    <p>Use only verified and stamped instruments for accurate measurement.</p>
+                </div>
+        </aside>
+        <section>
+
+
+            <div class="welcome_section">
+                <div class="info">
+                <h2>Welcome to Instrument Verification Portal</h2>
+                <p>Here's an overview of your instrument verification status.</p>
+                </div>
+                <img src="mainimg.jpeg" alt="weighing and measuring instrument">
+            </div>
+
+            <div class="card_box">
+               <div class="card total_box"><span class="card-icon total_icon"><i class="fa-solid fa-scale-balanced"></i></span><h3>Total Instruments</h3><span class="card-number">5</span><a href="#"><span>View All</span><i class="fa-solid fa-arrow-right"></i></a></div>
+               <div class="card verified_box"><span class="card-icon verified_icon"><i class="fa-solid fa-file-circle-check"></i></span><h3>Verified Instruments</h3><span class="card-number">4</span><a href="#"><span>View All</span><i class="fa-solid fa-arrow-right"></i></a></div>
+               <div class="card pending_box"><span class="card-icon pending_icon"><i class="fa-solid fa-clock"></i></span><h3>Pending Verification</h3><span class="card-number">1</span><a href="#"><span>View All</span><i class="fa-solid fa-arrow-right"></i></a></div>
+               <div class="card expired_box"><span class="card-icon expired_icon"><i class="fa-solid fa-certificate"></i></span><h3>Expired Certificates</h3><span class="card-number">0</span><a href="#"><span>View All</span><i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+
+            <div class="dashboard_grid">
+                <div class="dashboard_left">
+        <div class="charts_section">
+            <div class="verification_status"><h3>Instrument Verification Status</h3>
+            <div class="chart_container" id="chart-one"><img src="graph1.png" alt="graph1"></div>
+            </div>
+            <div class="verification_requests">
+                <h3>Verification Requests (Last 7 Days)</h3>
+                <div class="chart_container" id="chart-two"><img src="graph2.jpeg" alt="graph2"></div>
+            </div>
+            </div>
+
+            <div class="recent_instruments">
+                <div class="section_header">
+                <h3>Recent Instruments</h3>
+                <a href="#" class="view_all">View All</a>
+                </div>
+
+                <div class="table_wrapper">
+                <table>
+                    <thead> <tr><th>ID</th>
+                    <th>Instrument Type</th>
+                    <th>Make/Model</th>
+                    <th>Location</th>
+                    <th>Verification Status</th>
+                    <th>Expiry Date</th>
+                    <th>Action</th></tr></thead>
+                    <tbody>
+                        <tr>
+                      <td><div class="instrument_id"><i class="fa-solid fa-scale-balanced instrument_icon"></i>INST-001</div></td>
+<td>Electronic Weighing Scale</td>
+<td>Essae / EW-30</td>
+<td>Retail Shop, Delhi</td>
+<td> <span class="status_verified">Verified</span></td>
+<td>12-05-2026</td>
+<td><a href="#" class="view-btn">View</a></td></tr>
+
+ <tr>
+                      <td><div class="instrument_id"><i class="fa-solid fa-gas-pump instrument_icon"></i>INST-002</div></td>
+<td>Petrol Pump Meter</td>
+<td>Gilbarco / T-1000</td>
+<td>HP Petrol Pump, Delhi</td>
+<td><span class="status_pending">Pending</span></td>
+<td>08-11-2025</td>
+<td><a href="#" class="view-btn">View</a></td></tr>
+
+ <tr>
+                      <td><div class="instrument_id"><i class="fa-solid fa-truck  instrument_icon"></i>INST-003</div></td>
+<td>Truck Weighbridge</td>
+<td>Bharat Weighing</td>
+<td>Logistics Park, Noida</td>
+<td> <span class="status_verified">Verified</span></td>
+<td>08-12-2025</td>
+<td><a href="#" class="view-btn">View</a></td></tr>
+
+ <tr>
+                      <td><div class="instrument_id"><i class="fa-solid fa-scale-balanced instrument_icon"></i>INST-004</div></td>
+<td>Retail Weighing Scale</td>
+<td>Usha / 10kg</td>
+<td>Grocery Store, Delhi</td>
+<td> <span class="status_verified">Verified</span></td>
+<td>21-11-2025</td>
+<td><a href="#" class="view-btn">View</a></td></tr>
+
+ <tr>
+                      <td><div class="instrument_id"><i class="fa-solid fa-gas-pump  instrument_icon "></i>INST-005</div></td>
+<td>Petrol Pump Meter</td>
+<td>Tokheim / Quantium</td>
+<td>Fuel Station, Gurgaon</td>
+<td> <span class="status_verified">Verified</span></td>
+<td>03-02-2026</td>
+<td><a href="#" class="view-btn">View</a></td></tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            </div>
+
+            <div class="dashboard_right">
+
+             <div class="quick_actions">
+                <h3>Quick Actions</h3>
+                <div class="quick_buttons">
+               <button class="register-btn"><span class="register register-icon"><i class="fa-solid fa-scale-balanced"></i></span>Register New Instrument</button>
+                <button class="request-btn"><span class="request request-icon"><i class="fa-solid fa-file-circle-check"></i></span>Request Verification</button>
+                <button class="complaint-btn"><span class="complaint complaint-icon"><i class="fa-solid fa-triangle-exclamation"></i></span>File a Complaint</button>
+                <button class="qr-btn"><span class="qr qr-icon"><i class="fa-solid fa-qrcode"></i></span>Scan QR Code</button>
+                </div>
+             </div>
+
+             <div class="notifications">
+                <div class="notification_header">
+                <h3>Notifications</h3>
+                <a href="#">View All</a>
+                </div>
+                
+                <div class="notification_item "><i class="fa-solid fa-file-circle-check  verified "></i><p>Your instrument (INST-001) has been verified successfully. <span>2 hours ago</span></p></div>
+                <div class="notification_item "><i class="fa-solid fa-clock  pending"></i><p>Verification request for INST-002 is under review. <span>5 hours ago</span></p></div>
+                <div class="notification_item "><i class="fa-solid fa-warning warning "></i><p>Certificate for INST-004 will expire in 15 days. <span>1 day ago</span></p></div>
+             
+             </div>
+
+              <div class="recent_activity">
+                <div class="recent_header">
+                <h3>Recent Activity</h3>
+                <a href="#" class="view_all">View All</a>
+                </div>
+                
+                <div class="recent_item"><i class="fa-solid fa-file-circle-check firsticon"></i><p>INST-003 — Verification Completed<span>2 hours ago</span></p></div>
+                <div class="recent_item"><i class="fa-solid fa-clock secondicon"></i><p>INST-002 — Inspection Scheduled <span>5 hours ago</span></p></div>
+                <div class="recent_item" ><i class="fa-solid fa-triangle-exclamation thirdicon"></i><p>Complaint #CP-001 — Registered <span>1 day ago</span></p></div>
+                <div class="recent_item"><i class="fa-solid fa-certificate fourthicon"></i><p>INST-001 — Certificate Downloaded <span>1 day ago</span></p></div>
+                
+             </div>
+             </div>
+             </div>
+            </section>
+    </main>
+    <footer>
+        <div class="ministry_information">
+            <p><span>Ministry of Consumer Affairs, Food & Public Distribution</span><span>Department of Consumer Affairs</span></p>
+        </div>
+        <div class="sih_information">
+            <p><span>SIH 2026</span><span>Problem Statement 26036</span></p>
+        </div>
+    </footer>
+
+</body>
+</html>
